@@ -1,5 +1,5 @@
-# Active Scanning with Nmap and Wireshark
-主動式掃描：使用 Nmap 與 Wireshark
+# Network Reconnaissance and Active Scanning with Nmap and Wireshark
+使用 Nmap 與 Wireshark 進行網路偵察與主動式掃描
 
 ---------
 
