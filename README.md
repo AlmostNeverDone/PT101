@@ -51,16 +51,16 @@ Overall, this project highlights how scanning tools and packet analysis can be c
 <div align="center">
 </p>
 
-| Category <br/>分類 | Tools / Concepts <br/>工具 / 概念 |
-| ------------------ | ------------------------------------------------------------ |
-| Network Analysis <br/>網路分析 | Wireshark, PCAP files <br/>Wireshark、PCAP 封包檔 |
-| Remote Access <br/>遠端存取 | RDP protocol, TCP port 3389 <br/>RDP 協定、TCP 3389 埠號 |
-| Traffic Filtering <br/>流量過濾 | Display filters: `rdp`, `tcp.port == 3389` <br/>顯示過濾器：`rdp`、`tcp.port == 3389` |
-| Protocol Behavior <br/>協定行為 | TLS encryption, TCP handshake <br/>TLS 加密、TCP 三向交握 |
-| Session Analysis <br/>會話分析 | TLS decryption, TCP stream reconstruction <br/>TLS 解密、TCP 會話重建 |
-| Intrusion Indicators <br/>入侵指標 | RDP session initiator, username discovery <br/>RDP 會話發起者、使用者識別 |
-| Investigation Workflow <br/>調查流程 | Key extraction, decryption setup, session inspection <br/>私鑰提取、解密設定、會話檢視 |
-| Incident Response <br/>事件回應 | Host attribution, credential exposure, containment planning <br/>主機歸屬、憑證外洩、隔離規劃 |
+| Category <br/>分類              | Tools / Concepts <br/>工具 / 概念          |
+| ----------------------------- | -------------------------------------- |
+| Network Scanning <br/>網路掃描    | Nmap network scanner                   |
+| Packet Analysis <br/>封包分析     | Wireshark packet capture               |
+| Reconnaissance <br/>偵察階段      | Active scanning, host discovery        |
+| Port Scanning <br/>埠掃描        | TCP SYN scan, TCP connect scan         |
+| Service Enumeration <br/>服務枚舉 | Service detection, version detection   |
+| Network Protocols <br/>網路協定   | TCP/IP communication                   |
+| Security Assessment <br/>安全評估 | Attack surface identification          |
+| Traffic Monitoring <br/>流量監控  | Packet capture and protocol inspection |
 </div>
 <br/>
 
