@@ -25,19 +25,23 @@ Overall, this project highlights how scanning tools and packet analysis can be c
 <h2>Key Learning Outcomes 主要學習成果</h2>
 
 
-* Understand how RDP traffic is encrypted using TLS and how to identify it in PCAP files.<br/>
-  理解 RDP 流量如何透過 TLS 加密並在 PCAP 中辨識。
+* Understand the concept of active scanning and how it differs from passive network reconnaissance.<br/>
+  理解主動式掃描的概念以及其與被動式網路偵察的差異。
   
-* Learn how to configure Wireshark to decrypt TLS sessions using RSA keys.<br/>
-  學習如何使用 RSA 私鑰設定 Wireshark 解密 TLS 會話。
+* Learn how to use Nmap to discover hosts, identify open ports, and enumerate running services.
+  學習使用 Nmap 發現主機、辨識開放連接埠並列舉運行中的服務。
   
-* Practice filtering and analyzing decrypted RDP traffic, including session initiation and user identification.<br/>
-  實作過濾與分析解密後的 RDP 流量，包含會話建立與使用者識別。
+* Perform different scanning techniques such as basic scans, aggressive scans, and host discovery scans.
+  實作不同掃描方式，例如 基本掃描、進階掃描與主機探測掃描。
   
-* Apply forensic techniques to extract meaningful insights from encrypted network data.<br/>
-  應用取證技巧，從加密網路資料中提取有意義的調查結果。
+* Analyze scan results to identify potential security exposure and network services.
+  分析掃描結果以識別可能的 安全暴露面與網路服務。
 
+* Capture and analyze network packets generated during scans using Wireshark.
+  使用 Wireshark 擷取並分析掃描過程中產生的網路封包。
 
+* Develop foundational skills for penetration testing, reconnaissance, and network traffic monitoring.
+  培養滲透測試、偵察和網路流量監控的基礎技能。
 
 
 ---------
