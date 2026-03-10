@@ -28,19 +28,19 @@ Overall, this project highlights how scanning tools and packet analysis can be c
 * Understand the concept of active scanning and how it differs from passive network reconnaissance.<br/>
   理解主動式掃描的概念以及其與被動式網路偵察的差異。
   
-* Learn how to use Nmap to discover hosts, identify open ports, and enumerate running services.
+* Learn how to use Nmap to discover hosts, identify open ports, and enumerate running services.<br/>
   學習使用 Nmap 發現主機、辨識開放連接埠並列舉運行中的服務。
   
-* Perform different scanning techniques such as basic scans, aggressive scans, and host discovery scans.
+* Perform different scanning techniques such as basic scans, aggressive scans, and host discovery scans.<br/>
   實作不同掃描方式，例如 基本掃描、進階掃描與主機探測掃描。
   
-* Analyze scan results to identify potential security exposure and network services.
+* Analyze scan results to identify potential security exposure and network services.<br/>
   分析掃描結果以識別可能的 安全暴露面與網路服務。
 
-* Capture and analyze network packets generated during scans using Wireshark.
+* Capture and analyze network packets generated during scans using Wireshark.<br/>
   使用 Wireshark 擷取並分析掃描過程中產生的網路封包。
 
-* Develop foundational skills for penetration testing, reconnaissance, and network traffic monitoring.
+* Develop foundational skills for penetration testing, reconnaissance, and network traffic monitoring.<br/>
   培養滲透測試、偵察和網路流量監控的基礎技能。
 
 
