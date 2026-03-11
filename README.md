@@ -151,6 +151,8 @@ These activities correspond to the Reconnaissance phase of the Cyber Kill Chain,
 
 <h2>Reference 參考</h2>
 
-[Hack the Box Academy] [Intro to Network Traffic Analysis](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)<br/>
-[UniSQ] [CSC5050 - Networking Foundations](https://handbook-guide.unisq.edu.au/course/2025/CSC5050?year=2025)
+[UniSQ] [CSC6101 - Penetration Testing](https://handbook-guide.unisq.edu.au/course/2026/CSC6101)<br/>
+[TryHackMe] [Cyber Kill Chain](https://tryhackme.com/room/cyberkillchainzmt)<br/>
+[TryHackMe] [Nmap: The Basics](https://tryhackme.com/room/nmap)<br/>
+[TryHackMe] [Wireshark Module](https://tryhackme.com/module/wireshark)<br/>
 <br/>
