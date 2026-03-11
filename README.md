@@ -149,6 +149,14 @@ These activities correspond to the Reconnaissance phase of the Cyber Kill Chain,
 
 ---------
 
+<h2>Security Insight 安全洞察</h2>
+
+Network scanning activities such as Nmap reconnaissance can often be detected through abnormal ARP or ICMP traffic patterns in network monitoring tools.
+
+網路掃描活動（例如 Nmap 偵察）通常可以透過網路監控工具中異常的 ARP 或 ICMP 流量模式來偵測。
+
+---------
+
 <h2>Reference 參考</h2>
 
 [UniSQ] [CSC6101 - Penetration Testing](https://handbook-guide.unisq.edu.au/course/2026/CSC6101)<br/>
