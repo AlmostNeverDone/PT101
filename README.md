@@ -94,54 +94,57 @@ Overall, this project highlights how scanning tools and packet analysis can be c
 <h2>Practice 實踐</h2>
 
 <p align="center">
-<b>Task 1: Load and Inspect RDP PCAP<br/> (載入並檢視 RDP 封包檔)</b><br/>
-<img src="https://i.imgur.com/zYIdLW3.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 1: Basic Nmap scan result showing open ports<br/> (顯示開放埠的基本 Nmap 掃描結果)</b><br/>
+<img src="https://i.imgur.com/IXnTqob.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 2-1: RDP filter shows no packets<br/> (套用 RDP 過濾器後無封包顯示)</b><br/>
-<img src="https://i.imgur.com/2JTlqZF.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-* Because RDP uses TLS to encrypt data by default, the relevant traffic cannot be seen. <br/>(由於 RDP 預設使用 TLS 加密數據，所以無法看到相關流量) <br/>
+<b>Task 2: Aggressive Nmap scan results showing OS detection and service versions<br/> (顯示 OS 與服務版本的進階掃描結果)</b><br/>
+<img src="https://i.imgur.com/F31dpZm.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 2-2: TCP port 3389 filter showing TLS handshake<br/> (套用 TCP 3389 過濾器後顯示 TLS 交握)</b><br/>
-<img src="https://i.imgur.com/3gc6Mid.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 3: Metasploitable VM running in the virtual environment<br/> (虛擬機環境中的 Metasploitable 系統)</b><br/>
+<img src="https://i.imgur.com/sJSRCC7.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 3: Import RSA Key to Decrypt RDP<br/> (匯入 RSA 私鑰以解密 RDP)</b><br/>
-<img src="https://i.imgur.com/1hz7bk9.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 4: Output of the command showing the target IP<br/> (指令結果顯示目標的 IP 位址)</b><br/>
+<img src="https://i.imgur.com/LWdH9II.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+* Target system IP <br/>(目標系統 IP) <br/>
 <br />
 <br />
-<b>Task 4: Analyze Decrypted RDP Session<br/> (分析解密後的 RDP 會話)</b><br/>
-<img src="https://i.imgur.com/oS0OkNP.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 5: Nmap scan results showing open services on Metasploitable<br/> (顯示 Metasploitable 開放服務的掃描結果)</b><br/>
+<img src="https://i.imgur.com/UwHctrD.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 5: Identify Session Initiator and Username<br/> (確認會話發起者與使用者帳號)</b><br/>
-<img src="https://i.imgur.com/q0BqFiA.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 6: Ping scan results confirming host availability<br/> (確認主機在線的 Ping Scan 結果)</b><br/>
+<img src="https://i.imgur.com/x8kXkzp.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-
+<b>Task 7: ARP Host Discovery Packets Captured During Nmap Ping Scan<br/> (Nmap Ping Scan 期間擷取到的 ARP 主機探測封包)</b><br/>
+<img src="https://i.imgur.com/ChsuMrA.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<b>Task 8: ARP Discovery Packets Observed During Nmap Ping Scan<br/> (Nmap Ping Scan 過程中觀察到的 ARP 主機探測封包)</b><br/>
+<img src="https://i.imgur.com/WkI1AZF.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 
 
 ---------
 
 <h2>Results 專題結論</h2>
 
-This project demonstrates how Wireshark can decrypt and analyze RDP traffic when the correct RSA private key is available. 
+This project demonstrates how Nmap active scanning can identify reachable hosts, open ports, and exposed services during the reconnaissance stage of a security assessment.
 
-本專題示範了在取得正確的 RSA 私鑰後，如何使用 Wireshark 解密並分析 RDP 流量。
+本專題展示了如何透過 Nmap 主動掃描 在安全評估的偵察階段識別可達主機、開放埠與暴露服務。
 
-The captured session from Bob’s host was initially unreadable due to TLS encryption, but once the key was imported, Wireshark revealed clear RDP negotiation details, session metadata, and identifiers such as the mstshash=bucky cookie.
+Packet capture with Wireshark revealed ARP discovery traffic generated during the host discovery scan, illustrating how scanning tools interact with network protocols at the packet level.
 
-從 Bob 主機擷取的 RDP 會話因 TLS 加密而無法閱讀，但在匯入私鑰後，Wireshark 成功顯示 RDP 協商流程、會話中繼資料，以及 mstshash=bucky 等識別資訊。
+透過 Wireshark 擷取封包可觀察到主機探測過程中產生的 ARP 探測流量，說明掃描工具在封包層級如何與網路協定互動。
 
-Through filtering, protocol inspection, and TCP stream reconstruction, we confirmed the initiating host, validated the server endpoint, and verified the decrypted session’s integrity. This workflow highlights the importance of key recovery and structured analysis when handling encrypted network traffic.
+These activities correspond to the Reconnaissance phase of the Cyber Kill Chain, where attackers gather information about target systems and potential attack surfaces.
 
-透過過濾、協定檢視與 TCP stream 重建，我們確認了會話發起主機、驗證伺服器端點，並確保解密後的會話內容完整。此流程強調了在處理加密網路流量時，金鑰回收與結構化分析的重要性。
-
-Overall, this project reinforces a key principle in network forensics: encrypted traffic is still analyzable when proper key material and methodology are applied.
-
-總結而言，本專題強化了網路鑑識中的一項核心觀念：只要具備正確的金鑰與分析流程，加密流量依然能被有效解析與調查。
+這些活動對應到 Cyber Kill Chain 的 Reconnaissance "偵察" 階段，攻擊者會在此階段蒐集目標系統資訊並識別可能的攻擊面。
 
 
 ---------
